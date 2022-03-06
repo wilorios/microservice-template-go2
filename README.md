@@ -1,0 +1,1 @@
+# microservice-template-go2
