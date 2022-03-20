@@ -10,8 +10,8 @@ import (
 	"syscall"
 
 	"github.com/wilorios/microservice-template-go2/internal/adapters/db"
+	routes "github.com/wilorios/microservice-template-go2/internal/adapters/web"
 	"github.com/wilorios/microservice-template-go2/internal/configurations"
-	"github.com/wilorios/microservice-template-go2/internal/routes"
 )
 
 // Instance defines an application.

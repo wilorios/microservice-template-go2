@@ -5,7 +5,7 @@ package controller
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/wilorios/microservice-template-go2/internal/entity"
-	"github.com/wilorios/microservice-template-go2/internal/service"
+	"github.com/wilorios/microservice-template-go2/internal/services"
 )
 
 type iPersonController interface {
@@ -14,11 +14,11 @@ type iPersonController interface {
 }
 
 type PersonControlle struct {
-	personService service.PersonServ
+	personService services.PersonServ
 }
 
 //New function create a new controller
-func New(ser service.PersonServ) *PersonControlle {
+func New(ser services.PersonServ) *PersonControlle {
 	return &PersonControlle{}
 }
 

@@ -8,11 +8,11 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/wilorios/microservice-template-go2/internal/configurations"
 	"github.com/wilorios/microservice-template-go2/internal/controller"
-	"github.com/wilorios/microservice-template-go2/internal/service"
+	"github.com/wilorios/microservice-template-go2/internal/services"
 )
 
 var (
-	personService    service.PersonServ         = *service.New()
+	personService    services.PersonServ        = *services.New()
 	personController controller.PersonControlle = *controller.New(personService)
 )
 

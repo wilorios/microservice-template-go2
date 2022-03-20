@@ -1,6 +1,6 @@
 //Package service provides code modularity,
 //it has the business logic and rules which in turn calls the entities
-package service
+package services
 
 import (
 	"github.com/wilorios/microservice-template-go2/internal/adapters/db"
