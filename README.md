@@ -10,7 +10,7 @@ This project is a set of ideas for implementing a microservice template with Go,
 - Cross-cutting concerns patterns
 
 # Dependencies:
-* [**Gorilla mux**](https://github.com/gorilla/mux)
+* [**Gin Gonic**](https://github.com/gin-gonic/gin)
 
 # Go Directories   
 
@@ -47,3 +47,9 @@ microservice-name
 Bibliography
 - https://microservices.io/patterns/
 - https://semver.org/
+
+Docker commands
+- docker build -t microservice-person .
+- docker images
+- docker run -p 8080:8080 microservice-person
+- docker images
