@@ -1,6 +1,6 @@
 # microservice-template-go2
 
-go project template for microservice architecture structure.
+go project template for microservice architecture structure ussing Gin-Gonic and Gorm (postgresql database).
 
 # Description
 This project is a set of ideas for implementing a microservice template with Go, I'll to ilustrate some Microservice patterns like:
@@ -11,6 +11,8 @@ This project is a set of ideas for implementing a microservice template with Go,
 
 # Dependencies:
 * [**Gin Gonic**](https://github.com/gin-gonic/gin)
+* [**GORM**](https://gorm.io/)
+* [**Postgresql**](https://hub.docker.com/_/postgres) 
 
 # Go Directories   
 
@@ -19,7 +21,16 @@ microservice-name
 ├── cmd
 |   ├── service
 |   |    └── main.go
+├── config
+|   └── config.yml
+├── docs
+|   └── people-project-insomnia.json
 ├── internal/
+|   ├── adapters
+|   |    └── db
+|   |    |   └── db.go
+|   |    └── web
+|   |    |   └── routes.go
 |   ├── application
 |   |    └── app.go
 |   ├── configurations
@@ -28,8 +39,6 @@ microservice-name
 |   |    └── controller.go
 |   ├── entity
 |   |    └── entity.go
-|   ├── routes
-|   |    └── routes.go
 |   ├── service
 |   |    └── service.go
 ├── pkg/
@@ -39,17 +48,19 @@ microservice-name
 |   ├── library02
 |   |    ├── file01.go
 |   |    └── file02.go
+├── Dockerfile
+├── docker-compose.yml
 ├── go.mod
 ├── go.sum
 └── README.md
 </pre>
 
+![Plantuml project](https://github.com/wilorios/microservice-template-go2/docs/plantuml-go-project.png)
+
 Bibliography
 - https://microservices.io/patterns/
 - https://semver.org/
 
-Docker commands
-- docker build -t microservice-person .
-- docker images
-- docker run -p 8080:8080 microservice-person
-- docker images
+Docker compose commands
+- docker-compose build 
+- docker-compose up
