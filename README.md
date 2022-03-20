@@ -55,7 +55,7 @@ microservice-name
 └── README.md
 </pre>
 
-![Plantuml project](https://github.com/wilorios/microservice-template-go2/docs/plantuml-go-project.png)
+![Plantuml project](https://github.com/wilorios/microservice-template-go2/blob/main/docs/plantuml-go-project.png)
 
 Bibliography
 - https://microservices.io/patterns/
